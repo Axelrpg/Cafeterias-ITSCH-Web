@@ -1,0 +1,100 @@
+<html class="body">
+<header>
+<div class="container">
+    <h1>BIENVENIDO ADMINISTRADOR DE LA CAFETERIA 2</h1>
+    <img src="/src/app/CAFETERIAS_ITSCH.png">
+    <button (click)="logOut()" (click)="deshabilitaRetroceso()">LogOut</button>
+</div>
+</header>
+<div class="body">
+<div class="divAgregar">
+    <form class="agregar" (ngSubmit)="agregarM()" [formGroup]="agregar">
+        <h3>Agregar al menu</h3>
+        <label>Nombre: </label><input type="text" formControlName="nombre"><br>
+        <label>Precio: $</label><input type="number" formControlName="precio"><br>
+        <button type="submit">Añadir al menu</button>
+    </form>
+</div>
+
+<div class="tMenu">
+    <h3>Menu</h3>
+    <table class="menu" id="tabla">
+        <thead>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let producto of productos">
+                <td>{{producto.nombre}}</td>
+                <td>${{producto.precio}}</td>
+                <td><button class="bi bi-pencil" (click)="editarMenu(producto.id,producto.nombre,producto.precio)"
+                        class="btn btn-outline-warning">Editar</button></td>
+                <td><button class="btn btn-outline-danger" (click)="eliminarMenu(producto.id)">Eliminar</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="actualizar">
+    <h3>Actualizar</h3>
+    <form id="formActualizar" [formGroup]="actualizar">
+
+        <label>Nombre: </label>
+        <input type="text" formControlName="nombreA" id="nombreA"><br>
+
+        <label>Precio: $</label>
+        <input type="number" formControlName="precioA" id="precioA"><br>
+
+        <button (click)="actualizarMenu()">Actualizar</button>
+    </form>
+</div>
+
+
+<div class="pedidos">
+    <h3>Pedidos</h3>
+    <table>
+        <thead>
+            <th>Nombre </th>
+            <th>Pedido </th>
+            <th>Total </th>
+            <th>Estatus </th>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let pedido of pedidos">
+                <td>{{pedido.nombre}}</td>
+                <td>{{pedido.pedido}}</td>
+                <td>{{pedido.total}}</td>
+                <td>{{pedido.estatus}}</td>
+                <td><input type="checkbox"
+                        (click)="actualizarEstado(pedido.id,pedido.estatus,pedido.nombre,pedido.total,pedido.pedido)">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="entregas">
+    <h3>Entregas</h3>
+    <table>
+        <thead>
+            <th>Nombre </th>
+            <th>Pedido </th>
+            <th>Total </th>
+            <th>Estatus </th>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let entrega of entregados">
+                <td>{{entrega.nombre}}</td>
+                <td>{{entrega.pedido}}</td>
+                <td>{{entrega.total}}</td>
+                <td>{{entrega.estatus}}</td>
+
+            </tr>
+
+        </tbody>
+        <button (click)="vaciarEntrega()">Vaciar Entregas</button>
+    </table>
+</div>
+</div>
+</html>

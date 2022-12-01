@@ -1,0 +1,181 @@
+
+table th {
+    color: #DBD66B;
+    border: 3px #d28508 solid;
+}
+
+table td {
+    color: #DBD66B;
+    border: 3px #c33737 solid;
+}
+
+table td:hover {
+    color: #52111d;
+    border: 3px #c33737 solid;
+    background-color: #DBD66B;
+}
+
+table {
+    margin: 10px;
+    width: max-content;
+    background-color: #52111d;
+    color: #DBD66B;
+}
+
+h1 {
+
+    height: 50px;
+    text-align: center;
+    color: #52111d;
+    background-color: #DBD66B;
+}
+
+
+.agregar input {
+
+    width: auto;
+    margin: 5px;
+}
+
+.agregar label {
+    color: #DBD66B;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 5px;
+}
+
+.agregar {
+    width: 400px;
+    background-color: #52111d;
+    border: #DBD66B solid 10px;
+}
+
+.agregar button {
+    position: relative;
+    left: 260px;
+    top: -5px;
+    border-top-left-radius: 10px;
+    background-color:#DBD66B;
+    color: #52111d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.agregar button:hover {
+   
+    background-color: #40AEDB;
+    color: #52111d;
+    
+}
+.agregar h3{
+    color: #DBD66B;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tMenu {
+    margin: 5px;
+    position: absolute;
+    left: -6px;
+background-color: #DBD66B;
+}
+.tMenu h3{
+    text-align: center;
+    color: #52111d;
+}
+
+
+.menu {
+    width: auto;
+}
+
+.actualizar {
+    position: relative;
+    height: auto;
+    width: 400px;
+    left: 425px;
+    top: -170px;
+    background-color: #52111d;
+    color: #DBD66B;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: #DBD66B solid 10px;
+}
+.actualizar h3{
+    color: #DBD66B;
+    text-align: center;
+    
+}
+
+.actualizar button {
+    position: relative;
+    left: 290px;
+    top: -5px;
+    border-top-left-radius: 10px;
+    background-color: #DBD66B;
+    color: #52111d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.actualizar input {
+    margin: 10px;
+    width: auto;
+    margin: 5px;
+}
+.actualizar label{
+    margin: 10px;
+}
+
+.actualizar button:hover {
+    position: relative;
+   
+    border-top-left-radius: 10px;
+    background-color: #40AEDB;
+    color: #52111d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pedidos {
+    
+    margin: 10px;
+    position: relative;
+    left: 415px;
+   background-color: #DBD66B;
+    width: fit-content;
+    top: -189px;
+}
+.pedidos h3{
+    text-align: center;
+    color: #52111d;
+}
+.container img{
+position: fixed;
+display:initial;
+top: 0px;
+
+object-position: start;
+}
+.container{
+    margin-top:5px;
+    border: #52111d solid 5px;
+}
+.container button{
+position: relative;
+left: 1080px;
+}
+
+.entregas {
+position: absolute;
+left: 1050px;
+background: #DBD66B;
+width:fit-content;
+
+top: 240px;
+}
+.entregas h3{
+    color: #52111d;
+    text-align: center;
+}
+.entregas button{
+  align-self: center;
+}
+.body {
+    height:699px;
+    background-color: #DBD66B;
+}

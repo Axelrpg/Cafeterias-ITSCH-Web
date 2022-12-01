@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "moviles-d682e": {
+      "hosting": {
+        "cafeterias": [
+          "moviles-d682e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "moviles-d682e"
+  }
+}
